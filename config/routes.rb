@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   end
 
   resources :subjects
-  resources :schedule
+  resources :schedules
+  resources :sections, only: :index
 
   root to: 'subjects#index'
 end

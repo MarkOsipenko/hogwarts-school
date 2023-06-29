@@ -1,0 +1,8 @@
+
+<%= render partial: "section", collection: @sections %>
+
+<%= form_for @schedule, method: :new do |f| %>
+    Section Id : <%= f.text_field :section_id %><br />
+
+  <%= f.submit %>
+<% end %>
